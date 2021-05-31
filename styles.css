@@ -1,0 +1,195 @@
+body{
+margin: 0;
+background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.header{
+width: 100%;
+height: 80px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 5%;
+}
+
+.header__img{
+width: 200px;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
+.header__menu{
+margin-right: 30px;
+margin-top: 20px;
+color: #fff;
+text-align: left;
+}
+
+.header__menu–profile{
+margin-right: 60px;
+width: 40px;
+display: flex;
+align-items: center;
+
+}
+
+.header__menu ul{
+display: none;
+list-style: none;
+padding: 0px;
+position: absolute;
+text-align: right;
+margin-right: -14px;
+
+}
+
+.header__menu:hover ul, ul:hover{
+display: block;
+
+}
+
+.header__menu li{
+margin: 10px 0px;
+}
+
+.header__menu li a{
+
+text-decoration: none;
+color: #fff;
+}
+
+.header__menu li a:hover{
+display: block;
+text-decoration: underline;
+
+}
+.header__menu–profile img{
+margin-right: 8px;
+width: 40px;
+height: 40px;
+}
+
+.header__menu–profile p{
+
+margin: 0px;
+color: #fff;
+}
+.logo{
+
+width: 200px;
+margin-top: 10px;
+}
+
+.search{
+
+width: 100%;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.search h2{
+
+color: #fff;
+
+}
+.search__input{
+
+width: 70%;
+height: 40px;
+border-radius: 20px;
+border:2px solid #fff;
+color: #fff;
+background-color: rgba(255, 255, 255, 0.1);
+padding-left: 20px;
+outline: none;
+
+} ::placeholder{
+
+color: #fff;
+}
+
+/**** carousel*******/
+
+.carousel{
+width: 100%;
+
+padding: 30px;
+position: relative;
+
+}
+.carousel__container{
+
+white-space: nowrap;
+margin: 70px 0px;
+padding-bottom: 10px;
+}
+
+.carousel-item{
+width: 200px;
+height: 250px;
+border-radius: 20px;
+background-color: #fff;
+overflow: hidden;
+display: inline-block;
+margin-right: 10px;
+cursor: pointer;
+transition: 450ms all;
+transform-origin: center left;
+position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item{
+
+transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item{
+opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover{
+transform: scale(1.5);
+opacity: 1;
+}
+
+.carousel-item__img{
+width: 200px;
+height: 250px;
+object-fit: cover;
+
+}
+
+.carousel-item__details{
+
+background: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%,rgba(0, 0, 0, 0)100%);
+font-size: 10px;
+opacity: 0;
+transition: 450ms opacity;
+padding: 10px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+}
+
+.carousel-item__details:hover{
+opacity: 1;
+}
+.carousel-item__details--tittle{
+    color: white;
+}
+.carousel-item__details--subtitle{
+color: white;
+}
